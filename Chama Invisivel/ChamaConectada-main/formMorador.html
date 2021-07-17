@@ -1,0 +1,331 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/formMorador.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  
+
+  <script>
+    window.console = window.console || function (t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+
+
+    /*JavaScript do botão de adicionar*/
+
+    function id(el) {
+      return document.getElementById(el);
+    }
+    window.onload = function () {
+      id('mais').onclick = function () {
+        id('format').value = parseInt(id('format').value) + 1;
+
+        id('total').value = 1 + id('format').value;
+      }
+      id('menos').onclick = function () {
+        if (id('format').value > 0)
+          id('format').value = parseInt(id('format').value) - 1;
+
+        id('total').value = 1 - id('format').value;
+      }
+    }
+
+
+    function id(el) {
+      return document.getElementById(el);
+    }
+    window.onload = function () {
+      id('maisRoupas').onclick = function () {
+        id('formatRoupas').value = parseInt(id('formatRoupas').value) + 1;
+
+        id('total').value = 1 + id('formatRoupas').value;
+      }
+      id('menosRoupas').onclick = function () {
+        if (id('formatRoupas').value > 0)
+          id('formatRoupas').value = parseInt(id('formatRoupas').value) - 1;
+
+        id('total').value = 1 - id('formatRoupas').value;
+      }
+    }
+
+
+    function id(el) {
+      return document.getElementById(el);
+    }
+    window.onload = function () {
+      id('maisLivros').onclick = function () {
+        id('formatLivros').value = parseInt(id('formatLivros').value) + 1;
+
+        id('total').value = 1 + id('formatLivros').value;
+      }
+      id('menosLivros').onclick = function () {
+        if (id('formatLivros').value > 0)
+          id('formatLivros').value = parseInt(id('formatLivros').value) - 1;
+
+        id('total').value = 1 - id('formatLivros').value;
+      }
+    }
+  </script>
+
+
+</head>
+
+<body translate="no">
+  <div class="modal-wrap">
+    <div class="modal-header"><span class="is-active"></span><span></span><span></span><span></span></div>
+    <div class="modal-bodies">
+      <div class="modal-body modal-body-step-1 is-showing">
+        <div class="title">Passo 1</div>
+        <div class="description">Olá, esse é o primeiro passo para iniciar o cadastro. </div>
+
+        <form>
+          <div class="label">Nome/Apelido</div>
+          <input type="text" placeholder="Nome" />
+
+          <div class="label">Rua/Melhor localização</div>
+          <input type="text" placeholder="Rua" />
+          <div class="text-center">
+            <div class="button prox">Próximo</div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-body modal-body-step-2">
+        <div class="title"> Passo 2</div>
+        <div class="description">Estamos quase lá! Selecione os itens que a pessoa precisa.</div>
+        <form>
+          <ul>
+            <li>
+              <input type="checkbox" id="myCheckbox1" />
+              <label for="myCheckbox1"><img src="https://image.flaticon.com/icons/png/512/3778/3778188.png" /></label>
+              <p>Roupas</p>
+            </li>
+            <li>
+          
+              <input type="checkbox" id="myCheckbox2" />
+              <label for="myCheckbox2"><img src="img/food-delivery.png"></label>
+              <p>Alimentos</p>
+            </li>
+            <li>
+          
+              <input type="checkbox" id="myCheckbox3" />
+              <label for="myCheckbox3"><img src="img/higiene-dental.png" /></label>
+              <p>Itens Higiênicos</p>
+            </li>
+            <li>
+          
+              <input type="checkbox" id="myCheckbox4" />
+              <label for="myCheckbox4"><img src="img/ideia.png" /></label>
+              <p>Outros</p>
+            </li>
+            <li>
+          </ul>
+
+            <br>Detalhe mais os itens.
+
+
+            <br>
+            <input type="text" name="outros" id="outros"> 
+          </labelt>
+
+
+          <div class="text-center fade-in">
+            <div class="button volta">Anterior</div>
+            <div class="button prox">Próximo</div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-body modal-body-step-3">
+        <div class="title">Passo 3</div>
+
+        <div class="description">Com a permissão do cidadão em situação de rua, escreva sobre a história e suas
+          características:</div>
+        <div class="label">História</div>
+        <textarea class="historia" type="text" cols="40" rows="8"></textarea>
+
+        <div class="label">Caracteristicas</div>
+        <textarea class="historia" type="text" cols="40" rows="8"></textarea>
+
+      
+        <form class="form-upload">
+          <label class="input-personalizado">
+           
+            
+       <center><input type="file" accept="img/*"><img src="https://image.flaticon.com/icons/png/512/3820/3820184.png"> <br><span class="botao-selecionar">Imagem</span>
+       </center></label>
+
+                  <div class="text-center fade-in">
+                    <div class="button volta">Anterior</div>
+            <div class="button prox">Próximo</div>
+          </div>
+      </div>
+
+      <div class="modal-body modal-body-step-4">
+        <div class="title">Passo 4</div>
+
+     <p class="pass4">Devido aos direitos de imagem, como exposições de fotos e história, é necessário que a pessoa concorde. Por isso disponibilizamos um espaço para que suba um vídeo com o morador confirmando a exposição das informações dele no site.</p>
+       
+        <form class="form-upload">
+          <label class="input-personalizado">
+           
+            
+       <center><input type="file" accept="video/*"><img src="https://image.flaticon.com/icons/png/512/2810/2810451.png"> <br><span class="botao-selecionar">Insira o vídeo</span>
+       </center></label>
+            
+            
+          </label>
+        </form>
+
+        
+
+<div>
+  <label>
+    <input type="checkbox" class="option-input checkbox" checked  required/>
+     Eu afirmo ter explicando para o morador o intuito da página, ressaltando pontos como o direito de imagem e a LGPD (Lei geral de proteção de dados) 
+  </label>
+  
+  <div>
+  <label>
+    <input type="checkbox" class="option-input checkbox" checked />
+       Eu afirmo ter pedido o consentimento do morador, para fazer a gravação do mesmo. 
+  </label>
+  
+
+      <p><center>
+        <div class="button volta">Anterior</div>
+        <a href="historias.html" class="button prox">Feito!</a>
+      </div>
+    </div>
+  </div>
+
+
+    <!--<div class="description">Check your email for the game results.</div>
+      <div class="text-center"> -->
+   
+
+  <div class="text-center">
+    <div class="rerun-button">Voltar</div>
+  </div>
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js">
+  </script>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script id="rendered-js">
+  // tick - de button pra prox
+  $('.prox').click(function () {
+    var $btn = $(this),
+      $step = $btn.parents('.modal-body'),
+      stepIndex = $step.index(),
+      $pag = $('.modal-header span').eq(stepIndex);
+
+    if (stepIndex === 0 || stepIndex === 1 || stepIndex === 2) {
+      step1($step, $pag);
+    // tick - de else pra else if
+    }  else if (stepIndex === 3) {
+      step4($step, $pag);
+    }
+
+  });
+  //tick - função volta
+  $('.volta').click(function () {
+    var $btn = $(this),
+      $step = $btn.parents('.modal-body'),
+      stepIndex = $step.index(),
+      $pag = $('.modal-header span').eq(stepIndex);
+
+    if (stepIndex === 1 || stepIndex === 2 || stepIndex === 3) {
+      volta($step, $pag);
+    }
+
+  });
+
+
+  function step1($step, $pag) {
+    console.log('step1');
+    // animate the step out
+    $step.addClass('animate-out');
+
+    // animate the step in
+    setTimeout(function () {
+      $step.removeClass('animate-out is-showing').
+      next().addClass('animate-in');
+      $pag.removeClass('is-active').
+      next().addClass('is-active');
+    }, 600);
+
+    // after the animation, adjust the classes
+    setTimeout(function () {
+      $step.next().removeClass('animate-in').
+      addClass('is-showing');
+
+    }, 1200);
+  }
+
+  function step4($step, $pag) {
+    console.log('3');
+
+    // animate the step out
+    $step.parents('.modal-wrap').addClass('animate-up');
+
+    setTimeout(function () {
+      $('.rerun-button').css('display', 'inline-block');
+    }, 300);
+  }
+  //tick - função volta, copia da step1, prev() ao invés de next()
+  function volta($step, $pag) {
+    console.log('2');
+    // animate the step out
+    $step.addClass('animate-out');
+
+    // animate the step in
+    setTimeout(function () {
+      $step.removeClass('animate-out is-showing').
+      prev().addClass('animate-in');
+      $pag.removeClass('is-active').
+      prev().addClass('is-active');
+    }, 600);
+
+    // after the animation, adjust the classes
+    setTimeout(function () {
+      $step.prev().removeClass('animate-in').
+      addClass('is-showing');
+
+    }, 1200);
+  }
+
+  $('.rerun-button').click(function () {
+    $('.modal-wrap').removeClass('animate-up').
+    find('.modal-body').
+    first().addClass('is-showing').
+    siblings().removeClass('is-showing');
+
+    $('.modal-header span').first().addClass('is-active').
+    siblings().removeClass('is-active');
+    $(this).hide();
+  });
+
+  $('.rerun-button').click(function () {
+    $('.modal-wrap').removeClass('animate-up').
+    find('.modal-body').
+    first().addClass('is-showing').
+    siblings().removeClass('is-showing');
+
+    $('.modal-header span').first().addClass('is-active').
+    siblings().removeClass('is-active');
+    $(this).hide();
+  });
+
+</script>
+
+
+</body>
+
+</html>

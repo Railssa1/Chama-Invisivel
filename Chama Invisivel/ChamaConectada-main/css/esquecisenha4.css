@@ -1,0 +1,51 @@
+body{
+  
+  background-image: linear-gradient(115deg,
+    rgba(241, 241, 241, 0.473),
+    rgba(219, 219, 219, 0.411)), url(../img/Cidade_Vetores_e_Ilustracoes_de_Stock.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 100%;
+    margin-top:100px;
+    margin-bottom:234px;
+  font-family: sans-serif;
+}
+
+
+.form{
+
+width: 600px; 
+margin: auto;
+padding-top:40px ;
+}
+
+.card-top{
+
+text-align: center;
+
+
+}
+
+.card{
+
+box-shadow:1px 1px 5 px #ccc;
+background-color: white;
+padding: 30px;
+border-radius: 5px;
+
+}
+
+.imgl{
+
+border-radius: 50px;
+width: 100px; ;
+box-shadow: 1px 1px 5 px #ccc;
+}
+
+.title {
+color:#FF8C00;
+text-decoration: none;
+margin-top: 30px
+
+}

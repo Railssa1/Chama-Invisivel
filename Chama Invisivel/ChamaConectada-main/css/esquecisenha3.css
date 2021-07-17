@@ -1,0 +1,114 @@
+body{
+  
+        background-image: linear-gradient(115deg,
+          rgba(241, 241, 241, 0.473),
+          rgba(219, 219, 219, 0.411)), url(../img/Cidade_Vetores_e_Ilustracoes_de_Stock.jfif);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center ;
+          height: 100%;
+          margin-top:10px;
+          margin-bottom:135px;
+        font-family: sans-serif;
+    }
+    
+
+.form{
+
+    width: 500px; 
+    margin: auto;
+    padding-top:40px ;
+}
+
+.card-top{
+
+    text-align: center;
+
+
+}
+
+.card{
+
+    box-shadow:1px 1px 5 px #ccc;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+
+}
+
+.card-group{
+
+    margin-bottom: 10px;
+   
+
+}
+
+.card-group> label{
+
+width:100% ;
+color: rgb(77, 77, 77);
+display: block;
+margin-top: 30px;
+}
+
+.card-group > input{
+
+border: 1px solid rgb(148, 146, 146);
+border-radius: 20px;
+outline: 0;
+width: 100%;
+height: 25px;
+padding: 5px;
+background-color: #ccc;
+
+}
+
+.senha > ul{
+
+    list-style: none;
+}
+
+.card-group > button{
+
+    background-image: linear-gradient( to right, #FF8C00,rgb(245, 63, 18));
+    width:50% ;
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    border: 0px;
+    outline: 0;
+    margin-top: 25px;
+    margin-left: 100px;
+    
+}
+
+.btn button:hover{
+    background-image: linear-gradient( to right, #FF8C00,rgb(226, 80, 12));
+
+}
+
+.imgl{
+
+    border-radius: 50px;
+    width: 100px; ;
+    box-shadow: 1px 1px 5 px #ccc;
+}
+
+.title{
+color:#FF8C00;
+
+}
+.senha{
+
+    margin-left: 137px;
+
+}
+.senha > ul > li > a{
+
+    color: black;
+}
+a{
+
+    text-decoration: none;
+    color:white;
+}

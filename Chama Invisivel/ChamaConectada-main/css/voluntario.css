@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sura&display=swap');
+body, html{
+    height: 80%;
+    margin: 0;
+    
+}
+
+.bg{
+   background-image: linear-gradient(115deg,
+      rgba(241, 241, 241, 0.479),
+      rgba(219, 219, 219, 0.719)), url(../img/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+}
+
+header p{
+    margin:2 2 2 2;
+    font-family: "Sura";
+    font-size:4vw;
+ 
+}
+
+h1{
+    font-family: "Fredoka One";
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+
+}
+.card-img1{
+    border-radius: 40px;
+    width: 250px;
+    height: 300px;
+}
+
+.card-img2{
+    border-radius: 40px;
+    width: 250px;
+    height: 300px;
+}
+
+.card-img3{
+    border-radius: 40px;
+    width: 250px;
+    height: 300px;
+}
+
+.tema{
+    display:flex;
+    justify-content: space-around;
+    position:relative;
+    width:100%;
+    margin-top:10%;
+    margin-left: 5%;
+}
+
+.tema a,legend {
+    font-size: 1.5vw;
+    font-weight: bold ;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+.gradient{
+    background: rgba rgb(248, 248, 248);
+    background-image: linear-gradient(
+        to cover
+        ,rgba(224, 224, 224, 0.678) 0
+        ,rgba(243, 243, 243, 0.726) 60%
+        ,rgba(230, 230, 230, 0.747) 100%);
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+}
+
